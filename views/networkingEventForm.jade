@@ -1,0 +1,29 @@
+form.form-horizontal(role='form' id='networkingEventForm' method="post")
+   legend
+      h1 Networking Event
+      .form-group
+         label.control-label.col-sm-2(for="title") Title:
+         .col-sm-10
+            input.form-control(type='text' name="title" id="title" placeholder='Enter Event Title' require="true")
+      .form-group
+         label.control-label.col-sm-2(for="description") Description:
+         .col-sm-10
+            input.form-control(type='text' name="description" id="description" placeholder='Enter Event Description')
+      .form-group
+         label.control-label.col-sm-2(for="location") Location:
+         .col-sm-10
+            input.form-control(type='text' name="location" id="location" placeholder='Enter Event Location')
+      .form-group
+         label.control-label.col-sm-2(for="date") Date:
+         .col-sm-10
+            input.form-control(type='date' name="date" id="date" placeholder='Enter Event Date')
+      .form-group
+         label.control-label.col-sm-2(for="time") Time:
+         .col-sm-10
+            input.form-control(type='time' name="time" id="time" placeholder='Enter Event Time')
+
+      .form-group
+         button.btn.btn-primary(type='submit') Submit
+
+         a(href='/')
+            button.btn.btn-default(type="button") Cancel

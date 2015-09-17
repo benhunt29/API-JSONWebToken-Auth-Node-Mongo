@@ -10,6 +10,7 @@ var routes = require('./routes/index');
 var authenticate = require('./routes/authenticate');
 var register = require('./routes/register');
 var test = require('./routes/api/test');
+var networkingEvent = require('./routes/api/networkingEvent');
 
 
 
@@ -66,6 +67,7 @@ app.use('/', routes);
 app.use('/authenticate', authenticate);
 app.use('/register', register);
 app.use('/api/test', test);
+app.use('/api/networkingEvent', networkingEvent);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

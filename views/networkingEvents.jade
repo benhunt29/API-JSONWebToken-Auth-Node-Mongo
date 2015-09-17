@@ -1,0 +1,16 @@
+#networkingEvents
+script(id='eventTemplate' type = 'text/x-handlebars-template')
+   {{#each this}}
+   .well.col-lg-6.events
+      ul.list-group
+         li.list-group-item Event Title:
+            span {{title}}
+         li.list-group-item Event Description:
+            span {{description}}
+         li.list-group-item Event Location:
+            span {{location}}
+         li.list-group-item Event Date:
+            span {{date}}
+         li.list-group-item Event Time:
+            span {{time}}
+   {{/each}}

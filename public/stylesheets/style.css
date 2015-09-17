@@ -14,3 +14,12 @@ a {
 .error{
     color: red;
 }
+
+#rememberMe{
+    font-size: 80%;
+    margin-top: 12px;
+}
+
+#submitMain,#registerMain{
+    float:right;
+}
